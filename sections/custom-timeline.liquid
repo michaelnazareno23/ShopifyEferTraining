@@ -1,0 +1,197 @@
+<style>
+    .timeline-date {
+        font-size: 20px;
+    }
+
+    .timeline-container {
+        display: flex;
+        position: relative;
+    }
+
+    .timeline-container:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .timeline-item {
+        width: 300px;
+        display: flex;
+        height: fit-content;
+        position: relative;
+    }
+
+
+    .timeline-item:nth-child(even):before {
+        content: "";
+        position: absolute;
+        left: 14%;
+        background-color: #000;
+        width: 1px;
+        height: 80px;
+        bottom: -73px;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        content: "";
+        position: absolute;
+        left: 14%;
+        transform: translateX(-50%);
+        background-color: #000;
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        bottom: -77px;
+    }
+
+    .timeline-item:nth-child(odd):before {
+        content: "";
+        position: absolute;
+        left: 13%;
+        background-color: #000;
+        width: 1px;
+        height: 80px;
+        top: -73px;
+    }
+
+
+    .timeline-item:nth-child(odd)::after {
+        content: "";
+        position: absolute;
+        left: 13%;
+        transform: translateX(-50%);
+        background-color: #000;
+        width: 20px;
+        height: 20px;
+        border-radius: 100px;
+        top: -83px;
+    }
+
+
+   .image-wrap {
+      position: relative;
+      z-index: 2;
+   }
+    
+    
+    .timeline-item:nth-child(odd) {
+        margin-top: 15%;
+    }
+
+    .timeline-item.active:nth-child(odd) {
+        margin-top: 75%;
+    }
+
+  
+    .timeline-container {
+        padding: 40px 0 40px;
+    }
+    .image-wrap img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        margin-right: 30px;
+    }
+    .time-line-desc {
+        display: none;
+        position: absolute;
+        z-index: 5;
+        top: 50px;
+        width: 320px;
+    }
+    .content-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
+
+<div class="page-width sample">
+    <div class="timeline-container">
+         {%- for block in section.blocks -%}
+            {% case block.type %}
+              {%- when 'time-line-item' -%}
+                <div class="timeline-item">
+                    <div class="image-wrap">
+                        <a href="https://online.flippingbook.com/view/{{ block.settings.timeline_id }}">
+                             <img src="{{block.settings.image_thumbnail | img_url: 'master' }}" alt="">
+                        </a>
+                    </div>
+                    <div class="content-wrap">
+                      <h2 class="timeline-date">{{ block.settings.date }}</h2>
+                      <p class="time-line-desc">
+                          {{ block.settings.timeline_description }}                 
+                      </p>                       
+                    </div>
+                 </div> 
+            {%- endcase -%}
+          {%- endfor -%}        
+    </div>        
+</div>
+
+<script>
+
+jQuery(function($){
+
+$(document).ready(function () {
+    $('.timeline-item').on("click", function() {
+       
+
+         $(this).find('.time-line-desc').slideToggle();
+    });
+
+    });
+});
+
+
+</script>
+
+{% schema %}
+    {
+    "name": "Custom Timeline",
+    "settings": [
+      {
+        "type": "text",
+        "id": "class_name",
+        "label": "Class Name"
+      }
+    ],
+    "blocks": [
+       {
+        "name": "Timeline Item",
+        "type": "time-line-item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "timeline_id",
+            "label": "Timeline ID"
+          },
+          {
+            "type": "text",
+            "id": "date",
+            "label": "Date"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_thumbnail",
+            "label": "Image Thumbnail"
+          },
+          {
+            "type": "textarea",
+            "id": "timeline_description",
+            "label": "Timeline Description"
+          } 
+        ] 
+      }
+    ],
+    "presets": [
+      {
+        "name": "Custom Timeline"
+      }
+    ]
+  }  
+  {% endschema %}
