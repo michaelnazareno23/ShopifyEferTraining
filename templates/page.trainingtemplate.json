@@ -1,0 +1,116 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+    "sections": {
+      "main": {
+        "type": "main-page",
+        "disabled": true,
+        "settings": {
+          "padding_top": 28,
+          "padding_bottom": 28
+        }
+      },
+      "custom_timeline_eUDBEA": {
+        "type": "custom-timeline",
+        "blocks": {
+          "time_line_item_Ai7LTh": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": "523430",
+              "date": "2015",
+              "image_thumbnail": "shopify://shop_images/pf-f3e53b9a--sleepfoundation_91b47240-1367-4147-8a23-85adefc46a37.webp",
+              "timeline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dignissim nisl. Sed vestibulum felis id nulla volutpat, in consequat lacus varius. Vestibulum eu elementum arcu, non dictum sapien. Pellentesque consectetur dolor sapien, sed tincidunt enim viverra congue. Vivamus at ex sit amet sem"
+            }
+          },
+          "time_line_item_mmY3YN": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": "681647",
+              "date": "2016",
+              "image_thumbnail": "shopify://shop_images/pcmag-172x172.jpg",
+              "timeline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dignissim nisl. Sed vestibulum felis id nulla volutpat, in consequat lacus varius. Vestibulum eu elementum arcu, non dictum sapien. Pellentesque consectetur dolor sapien, sed tincidunt enim viverra congue. Vivamus at ex sit amet sem"
+            }
+          },
+          "time_line_item_MRXywi": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": "933717",
+              "date": "2018/2019",
+              "image_thumbnail": "shopify://shop_images/pf-f3e53b9a--sleepfoundation.webp",
+              "timeline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dignissim nisl. Sed vestibulum felis id nulla volutpat, in consequat lacus varius. Vestibulum eu elementum arcu, non dictum sapien. Pellentesque consectetur dolor sapien, sed tincidunt enim viverra congue. Vivamus at ex sit amet sem"
+            }
+          },
+          "time_line_item_UVh3QU": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": "899872",
+              "date": "2019/2020",
+              "image_thumbnail": "shopify://shop_images/pf-f3e53b9a--sleepfoundation.webp",
+              "timeline_description": ""
+            }
+          },
+          "time_line_item_bqXwiq": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": " 899872",
+              "date": "2019/2020",
+              "image_thumbnail": "shopify://shop_images/pf-2c3eb55a--poueCJ1.webp",
+              "timeline_description": "2019/2020"
+            }
+          },
+          "time_line_item_FBiLbt": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": " 899872",
+              "date": "2021/2022",
+              "image_thumbnail": "shopify://shop_images/pf-2c3eb55a--poueCJ1.webp",
+              "timeline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dignissim nisl. Sed vestibulum felis id nulla volutpat, in consequat lacus varius. Vestibulum eu elementum arcu, non dictum sapien. Pellentesque consectetur dolor sapien, sed tincidunt enim viverra congue. Vivamus at ex sit amet sem"
+            }
+          },
+          "time_line_item_FwUW4y": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": "452973314",
+              "date": "2022/2023 ",
+              "image_thumbnail": "shopify://shop_images/pf-f3e53b9a--sleepfoundation.webp",
+              "timeline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dignissim nisl. Sed vestibulum felis id nulla volutpat, in consequat lacus varius. Vestibulum eu elementum arcu, non dictum sapien. Pellentesque consectetur dolor sapien, sed tincidunt enim viverra congue. Vivamus at ex sit amet sem"
+            }
+          },
+          "time_line_item_KmwDWW": {
+            "type": "time-line-item",
+            "settings": {
+              "timeline_id": "489700485",
+              "date": "2023/2024",
+              "image_thumbnail": "shopify://shop_images/pcmag-172x172.jpg",
+              "timeline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed dignissim nisl. Sed vestibulum felis id nulla volutpat, in consequat lacus varius. Vestibulum eu elementum arcu, non dictum sapien. Pellentesque consectetur dolor sapien, sed tincidunt enim viverra congue. Vivamus at ex sit amet sem"
+            }
+          }
+        },
+        "block_order": [
+          "time_line_item_Ai7LTh",
+          "time_line_item_mmY3YN",
+          "time_line_item_MRXywi",
+          "time_line_item_UVh3QU",
+          "time_line_item_bqXwiq",
+          "time_line_item_FBiLbt",
+          "time_line_item_FwUW4y",
+          "time_line_item_KmwDWW"
+        ],
+        "settings": {
+          "class_name": ""
+        }
+      }
+    },
+    "order": [
+      "main",
+      "custom_timeline_eUDBEA"
+    ]
+  }
+  
