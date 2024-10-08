@@ -21,9 +21,6 @@
                   </div> 
               {%- endcase -%}
             {%- endfor -%}  
-           
-
-
           </div>
           <div class="center-line"></div>
           <div class ="bottom items-container">
@@ -50,22 +47,8 @@
     </div>        
 </div>
 
-<script>
 
-jQuery(function($){
-
-$(document).ready(function () {
-    $('.timeline-item').on("click", function() {
-         $(this).toggleClass('active')
-
-         $(this).find('.time-line-desc').slideToggle();
-    });
-
-    });
-});
-
-
-</script>
+<script src="{{ 'custom-timeline-section.js' | asset_url }}" defer="defer"></script>
 
 {% schema %}
     {
