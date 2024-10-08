@@ -1,3 +1,47 @@
+
+
+/* Training section */
+.training-page-sec1 .banner__text p{
+  font-size: 18px !important;
+  color: #fff !important;
+}
+
+
+.training-page-sec1 .banner__heading {
+  font-size: 60px !important;
+  font-weight: 700 !important;
+  color: #fff;
+
+}
+
+
+.training-page-sec1 .banner::after, .banner__media::after {
+ 
+ background: #00000073 !important;
+ opacity: 1 !important;
+ 
+}
+
+
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    justify-content: start !important;
+}
+  .training-page-sec1 .banner__heading {
+    font-size: 37px !important;
+  
+}
+
+.top.items-container .timeline-item:nth-child(odd) {
+  display: block !important;
+  display: flex !important;
+}
+
+.bottom.items-container {
+  display: none;
+}
+}
+
 /*FONTS*/
 
 .form-checkbox-main {
